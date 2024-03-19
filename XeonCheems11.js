@@ -2232,7 +2232,7 @@ let link = 'https://chat.whatsapp.com/' + await XeonBotInc.groupInviteCode(group
         replygcxeon(` An invite link is sent to the user`) 
 }
 break
-            case 'closetime':
+            case 'قفل':
                 if (!m.isGroup) return XeonStickGroup()
                 if (!isAdmins && !XeonTheCreator) return XeonStickAdmin()
                 if (!isBotAdmins) return XeonStickBotAdmin()
@@ -2255,7 +2255,7 @@ break
                     replygcxeon(close)
                 }, timer)
                 break
-            case 'opentime':
+            case 'فتح':
                 if (!m.isGroup) return XeonStickGroup()
                 if (!isAdmins && !XeonTheCreator) return replygcxeon(mess.admin)
                 if (!isBotAdmins) return XeonStickBotAdmin()
@@ -2278,7 +2278,7 @@ break
                     replygcxeon(open)
                 }, timer)
                 break
-            case 'kick':
+            case 'طرد':
                 if (!isAdmins && !isGroupOwner && !XeonTheCreator) return XeonStickAdmin()
                 if (!m.isGroup) return XeonStickGroup()
                 if (!isAdmins && !isGroupOwner && !XeonTheCreator) return XeonStickAdmin()
@@ -2609,7 +2609,7 @@ if (!XeonTheCreator) return XeonStickOwner()
             case 'linkgroup':
             case 'linkgrup':
             case 'linkgc':
-            case 'gclink':
+            case 'لينك':
             case 'grouplink':
             case 'gruplink':
                 if (!m.isGroup) return XeonStickGroup()
@@ -3014,7 +3014,7 @@ break
             }
             break
             //convert
-case 's': case 'sticker': case 'stiker': {
+case 's': case 'sticker': case 'ملصق': {
 if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
@@ -3028,7 +3028,7 @@ replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVide
 }
 }
 break
-            case 'swm': case 'steal': case 'stickerwm': case 'take':{
+            case 'swm': case 'سرقه': case 'stickerwm': case 'take':{
 if (!isPremium) return replyprem(mess.premium)
 if (!args.join(" ")) return replygcxeon(`Where is the text?`)
 const swn = args.join(" ")
