@@ -603,7 +603,7 @@ var xeonlod = [
 "《 ███████▒▒▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
-"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🦄..."
+"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🌑..."
 ]
 let { key } = await XeonBotInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
 
@@ -1548,7 +1548,7 @@ case 'listowner': {
 
         }
         break
-            case 'shutdown':
+            case 'اقفل':
                 if (!XeonTheCreator) return XeonStickOwner()
                 replygcxeon(`Restarting will be completed in seconds`)
                 await sleep(3000)
