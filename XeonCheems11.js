@@ -3324,7 +3324,7 @@ replygcxeon(teks)
 break
 
             //game
-            case 'ttc':
+            case 'اكس او':
             case 'ttt':
             case 'اكس او': {
                 let TicTacToe = require("./lib/tictactoe")
@@ -3381,7 +3381,7 @@ Type *surrender* to give up and admit defeat`
             }
             break
             case 'delttc':
-            case 'حذف الجيم': {
+            case 'حذف جيم': {
                 this.game = this.game ? this.game : {}
                 try {
                     if (this.game) {
