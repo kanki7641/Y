@@ -3326,7 +3326,7 @@ break
             //game
             case 'اكس او':
             case 'ttt':
-            case 'اكس او': {
+            case 'اكس': {
                 let TicTacToe = require("./lib/tictactoe")
                 this.game = this.game ? this.game : {}
                 if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return replygcxeon('You are still in the game')
@@ -3381,7 +3381,7 @@ Type *surrender* to give up and admit defeat`
             }
             break
             case 'delttc':
-            case 'حذف جيم': {
+            case 'del game': {
                 this.game = this.game ? this.game : {}
                 try {
                     if (this.game) {
