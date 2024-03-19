@@ -1073,10 +1073,10 @@ if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd2) {
             }
             if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
                 replygcxeon({
-                    '-3': 'The game is over',
-                    '-2': 'Invalid',
-                    '-1': 'Invalid Position',
-                    0: 'Invalid Position',
+                    '-3': '*『🪭』انتهت اللعبة.*',
+                    '-2': '*『❗』غير صالح.*',
+                    '-1': '*『❗』انة ليس دورك.*',
+                    0: '*『❗』انة ليس دورك.*',
                 } [ok])
                 return !0
             }
@@ -1112,7 +1112,7 @@ ${isWin ? `@${winner.split('@')[0]} الفائز!` : isTie ? `*🙂انتهت ا
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 
-Type *surrender* to surrender and admit defeat`
+Type *للاستسلام اكتب استسلم🙂*`
             if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
                 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
             if (room.x !== room.o) XeonBotInc.sendText(room.x, str, m, {
